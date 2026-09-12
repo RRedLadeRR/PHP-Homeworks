@@ -2,7 +2,7 @@
 
 $t = rand(-20, 20);
 
-echo "Температура: $t °C<br><br>";
+echo "Temperature: $t °C<br><br>";
 
 echo "<table border='1'>";
 
