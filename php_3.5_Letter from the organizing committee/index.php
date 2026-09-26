@@ -9,7 +9,7 @@ $phrases = explode(". ", $template);
 // 2) In the first phrase, replace "Shanovniy" with the parent's name + "!"
 $parentName = "Ivan";
 $pos = strpos($phrases[0], "Shanovniy");
-$phrases[0] = substr_replace($phrases[0], $parentName . "!", $pos, strlen("Shanovniy"));
+$phrases[0] = substr_replace($phrases[0], $phrases[0] . " " . $parentName . "!", $pos, strlen("Shanovniy"));
 
 // 3) Replace the signature "Organizing Committee" with "Administration"
 $lastIndex = count($phrases) - 1;
